@@ -1,6 +1,6 @@
 # rtx
 
-`rtx` (Runtime Executor) is a CLI tool that can manage multiple language runtime versions on a per-project basis. It's like `asdf` but faster. It's also like `gvm`, `nvm`, `rbenv` & `pyenv` (and more) all in one! Simply install your language's plugin!
+`rtx` (Runtime Executor) is a CLI tool that can manage multiple language runtime versions on a per-project basis. It's like `asdf` but faster. It's also like `gvm`, `nvm`, `rbenv` & `pyenv` (and more) all in one!
 
 ## Setup
 
