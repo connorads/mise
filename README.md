@@ -1,6 +1,8 @@
 # rtx
 
-`rtx` (Runtime Executor) is a CLI tool that can manage multiple language runtime versions on a per-project basis. It's like `asdf` but faster. It's also like `gvm`, `nvm`, `rbenv` & `pyenv` (and more) all in one!
+[`rtx`](https://github.com/jdxcode/rtx) (Runtime Executor) is a CLI tool that can manage multiple language runtime versions on a per-project basis. It's like `asdf` but faster. It's also like `gvm`, `nvm`, `rbenv` & `pyenv` (and more) all in one!
+
+![image](https://github.com/jdxcode/rtx/raw/main/docs/demo.gif)
 
 ## Setup
 
