@@ -10,13 +10,13 @@
 brew install rtx
 ```
 
-### Add rtx to shell
+### Add `rtx` to shell
 
 ```sh
 echo 'eval "$(rtx activate zsh)"' >> ~/.zshrc
 ```
 
-### Add rtx completions to shell
+### Add `rtx` completions to shell
 
 ```sh
 sudo mkdir -p /usr/local/share/zsh/site-functions
