@@ -40,3 +40,11 @@ rtx use -g rust@latest
 ```sh
 rtx use node@latest
 ```
+
+### Install missing tools
+
+Given missing tools (e.g. `[WARN] Tool not installed: terraform@1.3.6`)
+
+```sh
+rtx install
+```
