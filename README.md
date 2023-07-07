@@ -18,13 +18,6 @@ brew install rtx
 echo 'eval "$(rtx activate zsh)"' >> ~/.zshrc
 ```
 
-### Add `rtx` completions to shell
-
-```sh
-sudo mkdir -p /usr/local/share/zsh/site-functions
-sudo sh -c 'rtx completion zsh  > /usr/local/share/zsh/site-functions/_rtx'
-```
-
 ## Commands
 
 ### Set global version
