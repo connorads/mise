@@ -29,10 +29,18 @@ echo 20.5.1 > .node-version # Node example
 
 ### Install missing tools
 
-Given missing tools specified in [local version files](#local-version-files) (e.g. `[WARN] Tool not installed: terraform@1.3.6`)
+Given missing tools specified in [local version files](#local-version-files) (e.g. `[WARN] Tool not installed: python@3.10`)
 
 ```sh
 rtx install
+```
+
+### Install missing plugin
+
+If `rtx install` is not working and you're not getting a warning (e.g. `[WARN] Tool not installed: terraform@1.3.6`) when there is an existing idiomatic version file (e.g. `.terraform-version`) you may need to install the corresponding plugin
+
+```sh
+rtx plugins install terraform
 ```
 
 ### Set global version
