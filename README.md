@@ -45,6 +45,8 @@ rtx plugins install terraform
 
 ### Set global version
 
+If you're sure you want to have a specific version always available then you can set a global version
+
 ```sh
 rtx use -g node@lts
 rtx use -g python@3.10
