@@ -43,6 +43,14 @@ If `rtx install` is not working and you're not getting a warning (e.g. `[WARN] T
 rtx plugins install terraform
 ```
 
+### Set current shell session version
+
+Sets a tool version for the current shell session. Useful if you're doing something quick and don't want to set a global or local version.
+
+```sh
+rtx shell node@lts
+```
+
 ### Set global version
 
 If you're sure you want to have a specific version always available then you can set a global version
