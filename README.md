@@ -1,21 +1,21 @@
-# rtx
+# mise
 
-[`rtx`](https://github.com/jdxcode/rtx) (Runtime Executor) is a CLI tool that can manage multiple language runtime versions on a per-project basis. It's like `asdf` but faster. It's also like `gvm`, `nvm`, `rbenv`, `tfenv` & `pyenv` (and more) all in one!
+[`mise`](https://github.com/jdxcode/mise) (mise-en-place) is a CLI tool that can manage multiple language runtime versions on a per-project basis. It's like `asdf` but faster. It's also like `gvm`, `nvm`, `rbenv`, `tfenv` & `pyenv` (and more) all in one!
 
-![image](https://github.com/jdxcode/rtx/raw/main/docs/demo.gif)
+![image](https://github.com/jdxcode/mise/raw/main/docs/demo.gif)
 
 ## Setup
 
-### Install `rtx`
+### Install `mise`
 
 ```sh
-brew install rtx
+brew install mise
 ```
 
-### Add `rtx` to shell
+### Add `mise` to shell
 
 ```sh
-echo 'eval "$(rtx activate zsh)"' >> ~/.zshrc
+echo 'eval "$(mise activate zsh)"' >> ~/.zshrc
 ```
 
 ## Commands
@@ -32,15 +32,15 @@ echo 20.5.1 > .node-version # Node example
 Given missing tools specified in [local version files](#local-version-files) (e.g. `[WARN] Tool not installed: python@3.10`)
 
 ```sh
-rtx install
+mise install
 ```
 
 ### Install missing plugin
 
-If `rtx install` is not working and you're not getting a warning (e.g. `[WARN] Tool not installed: terraform@1.3.6`) when there is an existing idiomatic version file (e.g. `.terraform-version`) you may need to install the corresponding plugin
+If `mise install` is not working and you're not getting a warning (e.g. `[WARN] Tool not installed: terraform@1.3.6`) when there is an existing idiomatic version file (e.g. `.terraform-version`) you may need to install the corresponding plugin
 
 ```sh
-rtx plugins install terraform
+mise plugins install terraform
 ```
 
 ### Set current shell session version
@@ -48,7 +48,7 @@ rtx plugins install terraform
 Sets a tool version for the current shell session. Useful if you're doing something quick and don't want to set a global or local version.
 
 ```sh
-rtx shell node@lts
+mise shell node@lts
 ```
 
 ### Set global version
@@ -56,9 +56,9 @@ rtx shell node@lts
 If you're sure you want to have a specific version always available then you can set a global version
 
 ```sh
-rtx use -g node@lts
-rtx use -g python@3.10
-rtx use -g rust@latest
+mise use -g node@lts
+mise use -g python@3.10
+mise use -g rust@latest
 ```
 
 ## Concepts
@@ -69,10 +69,10 @@ In order to automatically switch to the correct version of your runtime(s) when 
 
 #### Idiomatic version files
 
-[`rtx`](https://github.com/jdxcode/rtx) supports idiomatic version files (just like `asdf`). They're language-specific files like `.node-version` and `.python-version`.
-These are ideal for setting the runtime version of a project without forcing other developers to use a specific tool like `rtx`/`asdf`.
+[`mise`](https://github.com/jdxcode/mise) supports idiomatic version files (just like `asdf`). They're language-specific files like `.node-version` and `.python-version`.
+These are ideal for setting the runtime version of a project without forcing other developers to use a specific tool like `mise`/`asdf`.
 
-They support aliases, which means you can have an `.nvmrc` file with `lts/hydrogen` and it will work in `rtx` and `nvm`. Here are some of the supported legacy version files:
+They support aliases, which means you can have an `.nvmrc` file with `lts/hydrogen` and it will work in `mise` and `nvm`. Here are some of the supported legacy version files:
 
 | Plugin     | Idiomatic Version Files                            |
 |------------|----------------------------------------------------|
@@ -86,6 +86,6 @@ They support aliases, which means you can have an `.nvmrc` file with `lts/hydrog
 | terraform  | `.terraform-version`, `.packer-version`, `main.tf` |
 | yarn       | `.yarnrc`                                          |
 
-#### `rtx.toml`
+#### `.mise.toml`
 
-[`rtx.toml`](https://github.com/jdx/rtx#rtxtoml) is the native version file that is more customisable but requires that project collaborators use `rtx`.
+[`.mise.toml`](https://mise.jdx.dev/configuration.html#mise-toml) is the native version file that is more customisable but requires that project collaborators use `mise`.
