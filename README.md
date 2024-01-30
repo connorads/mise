@@ -89,3 +89,7 @@ They support aliases, which means you can have an `.nvmrc` file with `lts/hydrog
 #### `.mise.toml`
 
 [`.mise.toml`](https://mise.jdx.dev/configuration.html#mise-toml) is the native version file that is more customisable but requires that project collaborators use `mise`.
+
+#### `.tool-versions`
+
+[`.tool-versions`](https://mise.jdx.dev/configuration.html#tool-versions) is the `asdf` version file that supports multiple tools in one file but requires that project collaborators use `asdf` or `mise`.
