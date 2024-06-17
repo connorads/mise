@@ -1,6 +1,8 @@
 # mise
 
-[`mise`](https://github.com/jdxcode/mise) (mise-en-place) is a CLI tool that can manage multiple language runtime versions on a per-project basis. It's like `asdf` but faster. It's also like `gvm`, `nvm`, `rbenv`, `tfenv` & `pyenv` (and more) all in one! (formerly called "`rtx`")
+> Thanks for the ⭐ but you [may have been sent to the wrong place](https://x.com/AkitaOnRails/status/1800910119070236999). This repo is my guide to [`mise`](https://github.com/jdx/mise) that maybe should've been a [gist](https://gist.github.com/discover) 😅
+
+[`mise`](https://github.com/jdx/mise) (mise-en-place) is a CLI tool that can manage multiple language runtime versions on a per-project basis. It's like `asdf` but faster. It's also like `gvm`, `nvm`, `rbenv`, `tfenv` & `pyenv` (and more) all in one! (formerly called "`rtx`")
 
 ![image](https://github.com/jdxcode/rtx/raw/main/docs/demo.gif)
 
