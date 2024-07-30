@@ -63,6 +63,15 @@ mise use -g python@3.10
 mise use -g rust@latest
 ```
 
+### Use other backends
+
+If you'd like to install tools using other [backends](https://mise.jdx.dev/dev-tools/backends/) like [`pipx`](https://mise.jdx.dev/dev-tools/backends/pipx.html) or [`npm`](https://mise.jdx.dev/dev-tools/backends/npm.html).
+
+```sh
+brew install pipx
+mise use -g pipx:poetry
+```
+
 ## Concepts
 
 ### Local version files
