@@ -12,9 +12,6 @@ theme:
             left: "@connorads"
             right: "{current_slide} / {total_slides}"
             height: 3
-#        default:
-#            margin:
-#                percent: 2
 ---
 
 ![image:width:100%](comic.png)
@@ -23,8 +20,6 @@ theme:
 
 Meet `mise` ⚡
 ---
-
-❓ Using different versions of programming languages/runtimes in different projects?
 
 <!-- pause -->
 
@@ -59,15 +54,14 @@ Which tools are supported? ⚒️
 | `java`                    | `aws-cli`                 | `ripgrep`               |
 | `rust`                    | `gcloud`                  | `fd`                    |
 | `ruby`                    | `azure`                   | `fzf`                   |
-| `swift`                   | `kubectl`                 | `direnv` (built-in)     |
+| `swift`                   | `kubectl`                 | `delta`                 |
 | `php`                     | `helm`                    | `age`                   |
 | `dotnet`                  | `docker-compose`          | `github-cli`            |
-| `kotlin`                  | `kustomize`               | `lazygit`               |
+| `kotlin`                  | `tflint`                  | `lazygit`               |
 | `scala`                   | `ansible`                 | `neovim`                |
 | `dart`                    | `vault`                   | `starship`              |
 | `elixir`                  | `consul`                  | `trivy`                 |
 | `haskell`                 | `nomad`                   | `btop`                  |
-| `perl`                    | `tflint`                  | `delta`                 |
 
 > https://mise.jdx.dev/registry.html
 
@@ -103,7 +97,6 @@ Declare versions in project files 📂
 
 <!-- reset_layout -->
 
-
 > https://mise.jdx.dev/configuration.html
 
 <!-- end_slide -->
@@ -127,43 +120,44 @@ _.python.venv = { path = '.venv', create = true }
 
 <!-- end_slide -->
 
-# Demo 1 — Node
+Demo 🎭
+---
 
-```bash
-mkdir node-demo && cd node-demo
-echo "lts" > .nvmrc
-node -v          # ➜ v20.x (auto‑installed)
-mise list node
+<!-- column_layout: [1, 1] -->
+
+<!-- column: 0 -->
+
+```sh
+# Use tools for just one command
+mise exec node@22 -- node -v
+node -v
+
+# Make tools available globally
+mise use --global node@lts
+node -v
+which node
+mise use -g terraform jq go bat
+terraform -v
+jq --version
+go version
+mise ls
+```
+
+<!-- column: 1 -->
+
+```sh
+# activate mise tools automatically
+cd myproj
+mise use node@23 pnpm@10
+node -v
+pnpm -v
+bat mise.toml
+mise ls
+
+# deactivated when leaving folder
 cd ..
+node -v
 ```
-
-???
-Point out: you never ran nvm or brew; mise did it for you.
-
-<!-- end_slide -->
-
-# Demo 2 — Python + Terraform
-
-```bash
-mkdir infra && cd infra
-echo "3.12"  > .python-version
-echo "1.8.4" > .terraform-version
-python -V
-terraform version | head -1
-```
-
-???
-Show two runtimes resolved instantly.
-
-<!-- end_slide -->
-
-# Try it now
-
-```bash
-curl https://mise.run | bash
-```
-
-Docs → mise.jdx.dev
 
 <!-- end_slide -->
 
