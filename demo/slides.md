@@ -184,3 +184,33 @@ You can carry on using `brew` to install things, expecially GUI apps with `casks
 # Why not use `nix` or something else that's _"better"_?
 
 Yeah go for it. But `nix` is more involved and is probably a harder sell to your team.
+
+<!-- end_slide -->
+
+FIN
+---
+
+<!-- column_layout: [1, 1] -->
+
+<!-- column: 0 -->
+
+![](fin.png)
+
+<!-- column: 1 -->
+
+# How to get started?
+
+```sh
+brew install mise
+```
+
+> https://github.com/jdx/mise
+> https://mise.jdx.dev/
+
+# Questions?
+
+Ask today 🗣️
+
+Or online 🌐
+
+`@connorads`
