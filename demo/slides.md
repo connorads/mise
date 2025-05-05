@@ -170,8 +170,7 @@ Frequently asked questions 💡
 
 Drop in replacement. Better performance¹, improved security, better DX, and lack of reliance on shims.
 
-_¹ Performance is still better but `asdf` had a recent rewrite in `go`_
-
+> _¹ Performance is still better but `asdf` had a recent rewrite in `go`_
 > https://mise.jdx.dev/dev-tools/comparison-to-asdf.html
 
 <!-- pause -->
@@ -184,4 +183,4 @@ You can carry on using `brew` to install things, expecially GUI apps with `casks
 
 # Why not use `nix` or something else that's _"better"_?
 
-Yeah go for it. But `nix` is a bit more involved and is probably a harder sell for your teamates.
+Yeah go for it. But `nix` is more involved and is probably a harder sell to your team.
