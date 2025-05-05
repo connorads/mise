@@ -35,9 +35,26 @@ https://github.com/jdx/mise
 
 # Meet `mise` ⚡
 
-Single binary (Rust) – drop‑in replacement for `asdf`/`nvm`/`pyenv` etc.
+Use different versions of programming languages/runtimes in different projects?
 
-Installs & switches versions in milliseconds when you `cd`
+- 🦀 Single binary (Rust)
+- 🗄️ Easily manage different versions of runtimes/tools in projects or globally
+- 📂 Installs & switches versions in milliseconds when you `cd`
+- 🪄 One tool to rule them all: drop‑in replacement for `asdf`/`nvm`/`pyenv` etc.
+- 🤝 Your team doesn't need to migrate but they might want to
+
+## But there's moar
+
+- [CI](https://mise.jdx.dev/continuous-integration.html)
+- [backends](https://mise.jdx.dev/dev-tools/backends/)
+- [direnv](https://mise.jdx.dev/environments/)
+- [secrets](https://mise.jdx.dev/environments/secrets.html)
+- [python venv](https://mise.jdx.dev/lang/python.html#automatic-virtualenv-activation)
+
+
+---
+
+# Declare your versions in your project files
 
 ## Reads *existing* idiomatic version files
 
