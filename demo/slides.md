@@ -108,6 +108,19 @@ Declare versions in project files 📂
 
 <!-- end_slide -->
 
+`mise.toml` ⚙️
+---
+
+```toml
+[tools]
+python = { version = "3.11" }
+
+[env]
+_.python.venv = { path = '.venv', create = true }
+```
+
+<!-- end_slide -->
+
 # Demo 1 — Node
 
 ```bash
