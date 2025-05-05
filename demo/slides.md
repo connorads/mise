@@ -1,62 +1,86 @@
 ---
-author: Connor Adams | @connorads | https://connoradams.co.uk
+title: An introduction to `mise`
+sub_title: Simplifying developer environments
+authors: 
+ - Connor Adams
+ - "@connorads"
+ - https://connoradams.co.uk
+theme:
+    override:
+        footer:
+            style: template
+            left: "@connorads"
+            right: "{current_slide} / {total_slides}"
+            height: 3
+#        default:
+#            margin:
+#                percent: 2
 ---
 
-# An introduction to
+![image:width:100%](comic.png)
 
-https://github.com/jdx/mise
+<!-- end_slide -->
 
-```
-
- .----------------.  .----------------.  .----------------.  .----------------. 
-| .--------------. || .--------------. || .--------------. || .--------------. |
-| | ____    ____ | || |     _____    | || |    _______   | || |  _________   | |
-| ||_   \  /   _|| || |    |_   _|   | || |   /  ___  |  | || | |_   ___  |  | |
-| |  |   \/   |  | || |      | |     | || |  |  (__ \_|  | || |   | |_  \_|  | |
-| |  | |\  /| |  | || |      | |     | || |   '.___`-.   | || |   |  _|  _   | |
-| | _| |_\/_| |_ | || |     _| |_    | || |  |`\____) |  | || |  _| |___/ |  | |
-| ||_____||_____|| || |    |_____|   | || |  |_______.'  | || | |_________|  | |
-| |              | || |              | || |              | || |              | |
-| '--------------' || '--------------' || '--------------' || '--------------' |
- '----------------'  '----------------'  '----------------'  '----------------' 
-
-```
-
+Meet `mise` ⚡
 ---
 
-# Version‑hell? 👹
+❓ Using different versions of programming languages/runtimes in different projects?
 
-- Different projects using different versions of `node` or `python`?
-- `nvm use ...`
-- `pyenv global ...`
-- Just to run the darn tests!
+<!-- pause -->
 
----
-
-# Meet `mise` ⚡
-
-Use different versions of programming languages/runtimes in different projects?
-
-- 🦀 Single binary (Rust)
-- 🗄️ Easily manage different versions of runtimes/tools in projects or globally
+- 🦀 `mise` is a single binary (Rust)
+- 🪄 One tool: drop‑in replacement for `asdf`/`nvm`/`pyenv` etc.
+- 🗄️ Declare different versions of tools in projects (or globally)
 - 📂 Installs & switches versions in milliseconds when you `cd`
-- 🪄 One tool to rule them all: drop‑in replacement for `asdf`/`nvm`/`pyenv` etc.
+- 🐚 Temporarily use a tool (e.g. `mise shell aws-cli@2.9.9`)
 - 🤝 Your team doesn't need to migrate but they might want to
+- ⚙️ Supports CI (e.g. GitHub Actions, GitLab CI)
 
-## But there's moar
+> https://github.com/jdx/mise
 
-- [CI](https://mise.jdx.dev/continuous-integration.html)
-- [backends](https://mise.jdx.dev/dev-tools/backends/)
-- [direnv](https://mise.jdx.dev/environments/)
-- [secrets](https://mise.jdx.dev/environments/secrets.html)
-- [python venv](https://mise.jdx.dev/lang/python.html#automatic-virtualenv-activation)
+<!-- pause -->
 
+# And moar 🌈
+- `environments` (alternative to `direnv`)
+- `tasks` (alternative to `make`)
+- `secrets` (alternative to `dotenv`)
+- `hooks` 
 
+<!-- end_slide -->
+
+Which tools are supported? ⚒️
 ---
 
-# Declare your versions in your project files
+| **Programming Languages** | **DevOps / IaC / Cloud** | **CLI Developer Tools** |
+|---------------------------|---------------------------|--------------------------|
+| `python`                  | `terraform`               | `jq`                    |
+| `node`                    | `opentofu`                | `yq`                    |
+| `go`                      | `pulumi`                  | `bat`                   |
+| `java`                    | `aws-cli`                 | `ripgrep`               |
+| `rust`                    | `gcloud`                  | `fd`                    |
+| `ruby`                    | `azure`                   | `fzf`                   |
+| `swift`                   | `kubectl`                 | `direnv`                |
+| `php`                     | `helm`                    | `age`                   |
+| `dotnet`                  | `docker-compose`          | `github-cli`            |
+| `kotlin`                  | `kustomize`               | `lazygit`               |
+| `scala`                   | `ansible`                 | `neovim`                |
+| `dart`                    | `vault`                   | `starship`              |
+| `elixir`                  | `consul`                  | `trivy`                 |
+| `haskell`                 | `nomad`                   | `btop`                  |
+| `perl`                    | `tflint`                  | `delta`                 |
 
-## Reads *existing* idiomatic version files
+> https://mise.jdx.dev/registry.html
+
+<!-- end_slide -->
+
+Declare your versions in your project files 📂
+---
+
+<!-- column_layout: [6, 4] -->
+
+<!-- column: 0 -->
+
+# Reads *existing* idiomatic version files
 
 | Tool      | Version Files |
 |-----------|---------------|
@@ -69,11 +93,20 @@ Use different versions of programming languages/runtimes in different projects?
 | Crystal   | `.crystal-version` |
 | Elixir    | `.exenv-version` |
 
-## Or use centralised files
-- **mise**: `mise.toml`
-- **asdf**: `.tool-versions`
+<!-- column: 1 -->
 
----
+# Or you can use centralised files
+
+**mise**: `mise.toml`
+
+**asdf**: `.tool-versions`
+
+<!-- reset_layout -->
+
+
+> https://mise.jdx.dev/configuration.html
+
+<!-- end_slide -->
 
 # Demo 1 — Node
 
@@ -88,7 +121,7 @@ cd ..
 ???
 Point out: you never ran nvm or brew; mise did it for you.
 
----
+<!-- end_slide -->
 
 # Demo 2 — Python + Terraform
 
@@ -103,21 +136,7 @@ terraform version | head -1
 ???
 Show two runtimes resolved instantly.
 
----
-
-# 45‑second Power‑Ups 🚀
-
-* Task runner — `mise test`
-* Dir‑scoped env vars — `mise env`
-* Even CLI tools — `mise use jq@1.7`
-
----
-
-# Supported tools 🌍
-
-Node • Python • Ruby • Go • Java • .NET • Bun • Deno • Terraform • JQ • AWS CLI • Rust • ...
-
----
+<!-- end_slide -->
 
 # Try it now
 
@@ -127,18 +146,29 @@ curl https://mise.run | bash
 
 Docs → mise.jdx.dev
 
+<!-- end_slide -->
+
+Frequently asked questions 💡
 ---
 
-# `mise` FAQ
+<!-- pause -->
 
-## How is this different from `asdf`?
+# How is this different from `asdf`?
 
-It's quicker and has fulls support for `asdf` but with more (optional) features.
+Drop in replacement. Better performance¹, improved security, better DX, and lack of reliance on shims.
 
-## But what about `homebrew` or `apt` etc.?
+_¹ Performance is still better but `asdf` had a recent rewrite in `go`_
 
-You can carry on using `brew` to install things, expecially GUI apps with `casks`. But you might want to consider using `mise` for _"developer tools"_, especially when using specific versions is required.
+> https://mise.jdx.dev/dev-tools/comparison-to-asdf.html
 
-## Why not use `nix` or something else that's _"better"_?
+<!-- pause -->
+
+# But what about `homebrew` or `apt` etc.?
+
+You can carry on using `brew` to install things, expecially GUI apps with `casks`. But you might want to consider using `mise` for _"developer tools"_. Especially when you want to use specific tool versions with others.
+
+<!-- pause -->
+
+# Why not use `nix` or something else that's _"better"_?
 
 Yeah go for it. But `nix` is a bit more involved and is probably a harder sell for your teamates.
