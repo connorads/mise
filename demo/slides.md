@@ -113,9 +113,15 @@ Declare versions in project files 📂
 
 ```toml
 [tools]
-python = { version = "3.11" }
+python = 3.11
+node = 22
+terraform = "1.9.8"
+aws-cli = "latest"
+"pipx:uv" = "latest"
+"npm:@anthropic-ai/claude-code" = "latest"
 
 [env]
+# auto create and activate virtual environment
 _.python.venv = { path = '.venv', create = true }
 ```
 
