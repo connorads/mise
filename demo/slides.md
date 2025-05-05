@@ -126,3 +126,19 @@ curl https://mise.run | bash
 ```
 
 Docs → mise.jdx.dev
+
+---
+
+# `mise` FAQ
+
+## How is this different from `asdf`?
+
+It's quicker and has fulls support for `asdf` but with more (optional) features.
+
+## But what about `homebrew` or `apt` etc.?
+
+You can carry on using `brew` to install things, expecially GUI apps with `casks`. But you might want to consider using `mise` for _"developer tools"_, especially when using specific versions is required.
+
+## Why not use `nix` or something else that's _"better"_?
+
+Yeah go for it. But `nix` is a bit more involved and is probably a harder sell for your teamates.
