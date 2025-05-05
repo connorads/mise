@@ -14,7 +14,17 @@ theme:
             height: 3
 ---
 
-![image:width:100%](comic.png)
+<!-- column_layout: [1, 1] -->
+
+<!-- column: 0 -->
+
+![](fine1.png)
+
+<!-- pause -->
+
+<!-- column: 1 -->
+
+![](fine2.png)
 
 <!-- end_slide -->
 
@@ -194,7 +204,7 @@ FIN
 
 <!-- column: 0 -->
 
-![](fin.png)
+![](drake.png)
 
 <!-- column: 1 -->
 
