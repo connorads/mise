@@ -9,7 +9,7 @@ theme:
     override:
         footer:
             style: template
-            left: "@connorads"
+            left: connoradams.co.uk
             right: "{current_slide} / {total_slides}"
             height: 3
 ---
