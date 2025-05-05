@@ -1,5 +1,5 @@
 ---
-author: Connor Adams @connorads
+author: Connor Adams | @connorads | https://connoradams.co.uk
 ---
 
 # An introduction to
