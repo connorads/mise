@@ -40,14 +40,17 @@ Single binary (Rust) – drop‑in replacement for `asdf`/`nvm`/`pyenv` etc.
 Installs & switches versions in milliseconds when you `cd`
 
 ## Reads *existing* idiomatic version files
-- **go**: `.go-version`, `go.mod`
-- **java**: `.java-version`, `.sdkmanrc`
-- **node**: `.nvmrc`, `.node-version`
-- **python**: `.python-version`
-- **ruby**: `.ruby-version`, `Gemfile`
-- **terraform**: `.terraform-version`, `.packer-version`, `main.tf`
-- **crystal**: `.crystal-version`
-- **elixir**: `.exenv-version`
+
+| Tool      | Version Files |
+|-----------|---------------|
+| Go        | `.go-version`, `go.mod` |
+| Java      | `.java-version`, `.sdkmanrc` |
+| Node      | `.nvmrc`, `.node-version` |
+| Python    | `.python-version` |
+| Ruby      | `.ruby-version`, `Gemfile` |
+| Terraform | `.terraform-version`, `main.tf` |
+| Crystal   | `.crystal-version` |
+| Elixir    | `.exenv-version` |
 
 ## Or use centralised files
 - **mise**: `mise.toml`
