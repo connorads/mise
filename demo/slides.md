@@ -95,7 +95,7 @@ Declare versions in project files 📂
 
 <!-- column: 1 -->
 
-# Or you can use centralised files
+# Or use centralised files
 
 **mise**: `mise.toml`
 
