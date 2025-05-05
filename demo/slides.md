@@ -73,7 +73,7 @@ Which tools are supported? ⚒️
 
 <!-- end_slide -->
 
-Declare your versions in your project files 📂
+Declare versions in project files 📂
 ---
 
 <!-- column_layout: [6, 4] -->
