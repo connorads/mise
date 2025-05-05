@@ -59,7 +59,7 @@ Which tools are supported? ⚒️
 | `java`                    | `aws-cli`                 | `ripgrep`               |
 | `rust`                    | `gcloud`                  | `fd`                    |
 | `ruby`                    | `azure`                   | `fzf`                   |
-| `swift`                   | `kubectl`                 | `direnv`                |
+| `swift`                   | `kubectl`                 | `direnv` (built-in)     |
 | `php`                     | `helm`                    | `age`                   |
 | `dotnet`                  | `docker-compose`          | `github-cli`            |
 | `kotlin`                  | `kustomize`               | `lazygit`               |
