@@ -116,8 +116,8 @@ Declare versions in project files 📂
 
 ```toml
 [tools]
-python = 3.11
-node = 22
+python = "3.11"
+node = "22"
 terraform = "1.9.8"
 aws-cli = "latest"
 "pipx:uv" = "latest"
