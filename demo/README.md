@@ -4,6 +4,9 @@ This lightning talk is a celebration of [mise](https://github.com/jdx/mise) - a 
 
 
 ```sh
+# Set timer for 5 minutes
+for ((i=300;i>=0;i--)); do echo -ne "\033]0;Timer: $((i/60))m $((i%60))s\007"; sleep 1; done
+
 # Run the presentation
 mise run presentation
 
