@@ -213,6 +213,8 @@ FIN
 
 ```sh
 brew install mise
+# or
+curl https://mise.run | sh
 ```
 
 > https://github.com/jdx/mise
@@ -222,6 +224,4 @@ brew install mise
 
 Ask today 🗣️
 
-Or online 🌐
-
-`@connorads`
+Or online 🌐 `@connorads`
