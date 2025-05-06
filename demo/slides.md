@@ -87,7 +87,7 @@ Declare versions in project files 📂
 
 <!-- column: 0 -->
 
-# Reads idiomatic version files
+# Idiomatic version files
 
 | Tool      | Version Files |
 |-----------|---------------|
@@ -102,7 +102,7 @@ Declare versions in project files 📂
 
 <!-- column: 1 -->
 
-# Or use centralised files
+# Centralised files
 
 **mise**: `mise.toml`
 
