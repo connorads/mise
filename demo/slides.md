@@ -178,7 +178,7 @@ Frequently asked questions 💡
 
 # How is this different from `asdf`?
 
-Drop in replacement. Better performance¹, improved security, better DX, and lack of reliance on shims.
+Drop in replacement. Better performance¹, improved security, better DX, more (optional) features/packages, and lack of reliance on shims.
 
 > _¹ Performance is still better but `asdf` had a recent rewrite in `go`_
 > https://mise.jdx.dev/dev-tools/comparison-to-asdf.html
@@ -187,7 +187,8 @@ Drop in replacement. Better performance¹, improved security, better DX, and lac
 
 # But what about `homebrew` or `apt` etc.?
 
-You can carry on using `brew` to install things, expecially GUI apps with `casks`. But you might want to consider using `mise` for _"developer tools"_. Especially when you want to use specific tool versions with others.
+You can carry on using `brew` to install things, expecially GUI apps with `casks`.
+`mise` is useful for sharing tools on projects and keeping your environment clean/isolated.
 
 <!-- pause -->
 
