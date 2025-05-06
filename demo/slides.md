@@ -141,11 +141,11 @@ Demo 🎭
 <!-- column: 0 -->
 
 ```sh
-# Use tools for just one command
+# 1) one off tool usage
 mise exec node@22 -- node -v
 node -v
 
-# Make tools available globally
+# 2) set global tools
 mise use --global node@lts
 node -v
 which node
@@ -159,7 +159,7 @@ mise ls
 <!-- column: 1 -->
 
 ```sh
-# activate mise tools automatically
+# 3) activate when cd
 cd myproj
 mise use node@23 pnpm@10
 node -v
@@ -167,7 +167,7 @@ pnpm -v
 bat mise.toml
 mise ls
 
-# deactivated when leaving folder
+# 4) deactivate when cd
 cd ..
 node -v
 ```
