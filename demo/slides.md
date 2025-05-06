@@ -50,8 +50,9 @@ Meet `mise` ⚡
 # And moar 🌈
 - `environments` (alternative to `direnv`)
 - `tasks` (alternative to `make`)
-- `secrets` (alternative to `dotenv`)
+- `secrets`
 - `hooks` 
+- Native Windows support (not just `wsl`)
 
 <!-- end_slide -->
 
