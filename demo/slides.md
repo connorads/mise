@@ -87,7 +87,7 @@ Declare versions in project files 📂
 
 <!-- column: 0 -->
 
-# Reads *existing* idiomatic version files
+# Reads idiomatic version files
 
 | Tool      | Version Files |
 |-----------|---------------|
@@ -201,7 +201,7 @@ Yeah go for it. But `nix` is more involved and is probably a harder sell to your
 
 <!-- end_slide -->
 
-FIN
+FIN 👋
 ---
 
 <!-- column_layout: [1, 1] -->
