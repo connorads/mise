@@ -33,13 +33,13 @@ Meet `mise` ⚡
 
 <!-- pause -->
 
-- 🦀 `mise` is a single binary (Rust)
-- 🪄 One tool: drop‑in replacement for `asdf`/`nvm`/`pyenv` etc.
+- 🦀 `mise` let's you manage multiple versions of languages/tools
+- 🪄 Drop‑in replacement for `asdf`/`nvm`/`pyenv` etc.
 - 🗄️ Declare different versions of tools in projects (or globally)
-- 📂 Installs & switches versions in milliseconds when you `cd`
+- 📂 Switches versions in milliseconds when you `cd`
 - 🐚 Temporarily use a tool (e.g. `mise shell aws-cli@2.9.9`)
-- 🤝 Your team doesn't need to migrate but they might want to
 - ⚙️ Supports CI (e.g. GitHub Actions, GitLab CI)
+- 🤝 Your team doesn't need to migrate but they might want to
 
 > https://github.com/jdx/mise
 
