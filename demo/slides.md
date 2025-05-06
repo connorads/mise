@@ -178,7 +178,7 @@ Frequently asked questions 💡
 
 # How is this different from `asdf`?
 
-Drop in replacement. Better performance¹, improved security, better DX, more (optional) features/packages, and lack of reliance on shims.
+Drop in replacement. Better performance¹, improved security, better DX, more (optional) features/packages, and doesn't require shims.
 
 > _¹ Performance is still better but `asdf` had a recent rewrite in `go`_
 > https://mise.jdx.dev/dev-tools/comparison-to-asdf.html
