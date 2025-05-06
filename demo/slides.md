@@ -55,7 +55,7 @@ Meet `mise` ⚡
 
 <!-- end_slide -->
 
-Which tools are supported? ⚒️
+Which languages and tools are supported? ⚒️
 ---
 
 | **Programming Languages** | **DevOps / IaC / Cloud** | **CLI Developer Tools** |
