@@ -35,11 +35,13 @@ Meet `mise` ⚡
 
 - ⚒️ Universal version manager for languages and dev tools
 - 🪄 Replaces individual tools like `tfenv`/`nvm`/`pyenv` etc.
-- 🗄️ Declare different versions of tools in projects (or globally)
+- 🗄️ Declare tools versions in projects (`.python-version`)
 - 📂 Switches versions in milliseconds when you `cd`
-- 🐚 Temporarily use a tool (e.g. `mise shell aws-cli@2.9.9`)
+- ⬇️ Automatically downloads missing tools
+- 🌍 Declare global tool versions (e.g. `mise use -g jq@latest`)
 - ⚙️ Supports CI (e.g. GitHub Actions, GitLab CI)
 - 🤝 Your team doesn't need to migrate but they might want to
+- 🐚 Temporarily use a tool (e.g. `mise shell aws-cli@2.9.9`)
 
 > https://github.com/jdx/mise
 
