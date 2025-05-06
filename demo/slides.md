@@ -33,8 +33,8 @@ Meet `mise` ⚡
 
 <!-- pause -->
 
-- 🦀 `mise` let's you manage multiple versions of languages/tools
-- 🪄 Drop‑in replacement for `asdf`/`nvm`/`pyenv` etc.
+- ⚒️ Manage multiple different versions of languages/tools
+- 🪄 Drop-in replacement for `asdf`/`nvm`/`pyenv` etc.
 - 🗄️ Declare different versions of tools in projects (or globally)
 - 📂 Switches versions in milliseconds when you `cd`
 - 🐚 Temporarily use a tool (e.g. `mise shell aws-cli@2.9.9`)
