@@ -23,17 +23,10 @@ Show
 
 #### DEMO START
 
-Sleep 500ms
+#### 1. Install global tools
 
-Type "mise exec node@22 -- node -v"
-Sleep 500ms Enter Wait Sleep 2s
-
-Type 'node -v' Sleep 500ms Enter Wait
-Sleep 2s
-
-Type 'clear' Sleep 500ms Enter Wait
-
-# Type 'eval "$(mise activate bash)"' Sleep 500ms Enter Wait
+Type "node -v" Sleep 500ms Enter Wait
+Sleep 1s
 
 Type "mise use --global node@lts" Sleep 500ms Enter Wait
 Sleep 2s
@@ -60,6 +53,8 @@ Sleep 3s
 Type 'clear' Sleep 500ms Enter Wait
 Sleep 1s
 
+### 2. Install project tools
+
 Type "cd myproj" Sleep 500ms Enter Wait
 Sleep 1s
 
@@ -78,6 +73,20 @@ Sleep 3s
 
 Type "cd .." Sleep 500ms Enter Wait
 Type "node -v" Sleep 500ms Enter Wait
+
+#### 3. Use tools for one-off commands
+
+Sleep 500ms
+
+Type "mise exec node@22 -- node -v"
+Sleep 500ms Enter Wait Sleep 2s
+
+Type 'node -v' Sleep 500ms Enter Wait
+Sleep 2s
+
+Type 'clear' Sleep 500ms Enter Wait
+
+#### DEMO END
 
 Sleep 10s
 
