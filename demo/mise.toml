@@ -1,10 +1,15 @@
 [tools]
 "aqua:mfontanini/presenterm" = "latest"
 ffmpeg = "latest"
+"pipx:weasyprint" = "latest"
 
 [tasks.presentation]
 description = "Present the slides"
 run = "presenterm slides.md"
+
+[tasks.pdf]
+description = "Export presentation PDF"
+run = "presenterm --export-pdf slides.md"
 
 [tasks.demo]
 description = "Create recordings with vhs"
