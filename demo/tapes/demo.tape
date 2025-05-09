@@ -1,4 +1,4 @@
- # Use mise run demo to record this tape
+# Use `mise run demo` to record this tape
 
 Output demo.mp4
 
