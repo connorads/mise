@@ -1,6 +1,5 @@
 [tools]
 "aqua:mfontanini/presenterm" = "latest"
-ffmpeg = "latest"
 "pipx:weasyprint" = "latest"
 
 [tasks.presentation]
