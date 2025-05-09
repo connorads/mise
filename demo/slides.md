@@ -33,6 +33,7 @@ Meet `mise` ⚡
 
 <!-- pause -->
 
+- 🦀 Open source, written in Rust, created by `@jdx`
 - ⚒️ Universal version manager for languages and dev tools
 - 🪄 Replaces individual tools like `tfenv`/`nvm`/`pyenv` etc.
 - 🗄️ Declare tools versions in projects (`.python-version`)
