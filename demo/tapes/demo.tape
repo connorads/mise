@@ -53,7 +53,27 @@ Sleep 3s
 Type 'clear' Sleep 500ms Enter Wait
 Sleep 1s
 
-### 2. Install project tools
+#### 2. Clone repo with virtual env
+
+# TODO create repo with mise toml
+# TODO need a fun script in there that uses some package
+# TODO need this thing to create venv and activate
+
+# TODO git Clone
+# TODO cd into
+# TODO bat mise.toml
+# TODO trust?
+# TODO mise install
+
+Type "python script.py" Sleep 500ms Enter Wait
+
+Type "cd .." Sleep 500ms Enter Wait
+Type "python -v" Sleep 500ms Enter Wait
+Sleep 2s
+
+Type 'clear' Sleep 500ms Enter Wait
+
+#### 3. Install project tools
 
 Type "cd myproj" Sleep 500ms Enter Wait
 Sleep 1s
@@ -73,18 +93,23 @@ Sleep 3s
 
 Type "cd .." Sleep 500ms Enter Wait
 Type "node -v" Sleep 500ms Enter Wait
+Sleep 2s
 
-#### 3. Use tools for one-off commands
+Type 'clear' Sleep 500ms Enter Wait
 
-Sleep 500ms
+#### 4. Use tools for one-off commands
+
+Type "node -v" Sleep 500ms Enter Wait
+
+Type "mise shell node@24"
+Sleep 500ms Enter Wait Sleep 2s
+
+Type "node -v" Sleep 500ms Enter Wait
 
 Type "mise exec node@22 -- node -v"
 Sleep 500ms Enter Wait Sleep 2s
 
 Type 'node -v' Sleep 500ms Enter Wait
-Sleep 2s
-
-Type 'clear' Sleep 500ms Enter Wait
 
 #### DEMO END
 
