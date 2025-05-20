@@ -4,9 +4,9 @@ Output demo.mp4
 
 # vhs settings: https://github.com/charmbracelet/vhs#settings
 Set Shell "bash"
-Set FontSize 24
-Set Width 1200
-Set Height 600
+Set FontSize 42
+Set Width 1920
+Set Height 1080
 Set Padding 10
 Set WindowBar Colorful
 Set TypingSpeed 35ms
