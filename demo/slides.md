@@ -226,6 +226,6 @@ curl https://mise.run | sh
 
 # Questions?
 
-Ask today 🗣️
+Ask today 🗣️ Or online 🌐 `@connorads`
 
-Or online 🌐 `@connorads`
+![](qr.png)
