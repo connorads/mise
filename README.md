@@ -104,3 +104,25 @@ They support aliases, which means you can have an `.nvmrc` file with `lts/hydrog
 #### `.tool-versions`
 
 [`.tool-versions`](https://mise.jdx.dev/configuration.html#tool-versions) is the `asdf` version file that supports multiple tools in one file but requires that project collaborators use `asdf` or `mise`.
+
+## Python Usage
+
+### Creating and Using a Virtual Environment
+
+To have `mise` automatically create and use a Python virtual environment (such as `.venv`), configure your project as follows:
+
+**Option 1: Add to `.mise.toml`**
+
+```toml
+[env]
+_.python.venv = {path = ".venv", create = true}
+```
+
+**Option 2: Use the CLI**
+
+```sh
+mise config set env._.python.venv.path   .venv
+mise config set env._.python.venv.create true
+```
+
+This will ensure that a `.venv` directory is created and used for your Python projects managed by `mise`.
