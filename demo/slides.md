@@ -35,7 +35,11 @@ theme:
 
 `mise` is all you need
 
+<!-- pause -->
+
 use specific versions in each project (e.g. `python`, `node`, `go`)
+
+<!-- pause -->
 
 and install any other tools you need (e.g. `jq`, `uv`, `claude`)
 
@@ -232,6 +236,19 @@ Drop in replacement. Better performance², improved security, better DX, more (o
 > https://mise.jdx.dev/dev-tools/comparison-to-asdf.html
 
 <!-- pause -->
+
+# Doesn't `uv` solve this already?
+
+Yes, `uv` let's you manage multiple versions of `python`, but `mise` is universal.
+
+You can still use `uv`. In fact, you can install it with `mise`. And `mise` also supports using `uv`'s virtual environments.
+
+> https://mise.jdx.dev/mise-cookbook/python.html
+
+<!-- end_slide -->
+
+Frequently asked questions 💡
+---
 
 # But what about `homebrew` or `apt` etc.?
 
