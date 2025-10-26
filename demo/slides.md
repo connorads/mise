@@ -37,7 +37,7 @@ Meet `mise` ⚡
 - 🦀 Open source, written in Rust, created by `@jdx`
 - ⚒️ Universal version manager for languages and dev tools
 - 🪄 Replaces individual tools like `tfenv`/`nvm`/`pyenv` etc.
-- 🗄️ Declare tools versions in projects (`.python-version`)
+- 🗄️ Declare tools versions in projects (`.python-version`)¹
 - 📂 Switches versions in milliseconds when you `cd`
 - ⬇️ Automatically downloads missing tools
 - 🌍 Declare global tool versions (e.g. `mise use -g jq@latest`)
@@ -85,24 +85,9 @@ Which languages and tools are supported? ⚒️
 Declare versions in project files 📂
 ---
 
-<!-- column_layout: [6, 4] -->
+<!-- column_layout: [2, 6] -->
 
 <!-- column: 0 -->
-
-# Idiomatic version files
-
-| Tool      | Version Files |
-|-----------|---------------|
-| Go        | `.go-version`, `go.mod` |
-| Java      | `.java-version`, `.sdkmanrc` |
-| Node      | `.nvmrc`, `.node-version` |
-| Python    | `.python-version` |
-| Ruby      | `.ruby-version`, `Gemfile` |
-| Terraform | `.terraform-version`, `main.tf` |
-| Crystal   | `.crystal-version` |
-| Elixir    | `.exenv-version` |
-
-<!-- column: 1 -->
 
 # Centralised files
 
@@ -110,14 +95,11 @@ Declare versions in project files 📂
 
 **asdf**: `.tool-versions`
 
-<!-- reset_layout -->
+<!-- pause -->
 
-> https://mise.jdx.dev/configuration.html
+<!-- column: 1 -->
 
-<!-- end_slide -->
-
-`mise.toml` ⚙️
----
+## `mise.toml`
 
 ```toml
 [tools]
@@ -132,6 +114,54 @@ aws-cli = "latest"
 # auto create and activate virtual environment
 _.python.venv = { path = '.venv', create = true }
 ```
+
+<!-- end_slide -->
+
+Declare versions in project files 📂
+---
+
+<!-- column_layout: [6, 4] -->
+
+<!-- column: 0 -->
+
+# Idiomatic version files¹
+
+| Tool      | Version Files |
+|-----------|---------------|
+| Go        | `.go-version`, `go.mod` |
+| Java      | `.java-version`, `.sdkmanrc` |
+| Node      | `.nvmrc`, `.node-version` |
+| Python    | `.python-version` |
+| Ruby      | `.ruby-version`, `Gemfile` |
+| Terraform | `.terraform-version`, `main.tf` |
+| Crystal   | `.crystal-version` |
+| Elixir    | `.exenv-version` |
+
+<!-- pause -->
+
+<!-- column: 1 -->
+
+## `.python-version`
+
+```
+3.12
+```
+
+<!-- pause -->
+
+## `.node-version`
+
+```
+22
+```
+
+<!-- pause -->
+
+<!-- reset_layout -->
+
+> https://mise.jdx.dev/configuration.html
+
+_¹ Idiomatic version files will default to disabled from `2025.10.0`. Can be enabled e.g. `mise settings add idiomatic_version_file_enable_tools python`_
 
 <!-- end_slide -->
 
@@ -183,9 +213,9 @@ Frequently asked questions 💡
 
 # How is this different from `asdf`?
 
-Drop in replacement. Better performance¹, improved security, better DX, more (optional) features/packages, and doesn't require shims.
+Drop in replacement. Better performance², improved security, better DX, more (optional) features/packages, and doesn't require shims.
 
-> _¹ Performance is still better but `asdf` had a recent rewrite in `go`_
+> _² Performance is still better but `asdf` had a recent rewrite in `go`_
 > https://mise.jdx.dev/dev-tools/comparison-to-asdf.html
 
 <!-- pause -->
