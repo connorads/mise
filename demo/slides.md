@@ -28,6 +28,19 @@ theme:
 
 <!-- end_slide -->
 
+<!-- jump_to_middle -->
+<!-- alignment: center -->
+
+# TL;DR
+
+`mise` is all you need
+
+use specific versions in each project (e.g. `python`, `node`, `go`)
+
+and install any other tools you need (e.g. `jq`, `uv`, `claude`)
+
+<!-- end_slide -->
+
 Meet `mise` ⚡
 ---
 
