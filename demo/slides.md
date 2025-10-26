@@ -32,6 +32,7 @@ Meet `mise` ⚡
 ---
 
 <!-- pause -->
+<!-- incremental_lists: true -->
 
 - 🦀 Open source, written in Rust, created by `@jdx`
 - ⚒️ Universal version manager for languages and dev tools
