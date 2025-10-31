@@ -43,6 +43,10 @@ use specific versions in each project (e.g. `python`, `node`, `go`)
 
 and install any other tools you need (e.g. `jq`, `uv`, `claude`)
 
+<!-- pause -->
+
+and a lot more! (if you want to)
+
 <!-- end_slide -->
 
 Meet `mise` ⚡
