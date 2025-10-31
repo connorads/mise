@@ -63,7 +63,7 @@ Meet `mise` ⚡
 - ⬇️ Automatically downloads missing tools
 - 🌍 Declare global tool versions (e.g. `mise use -g jq@latest`)
 - ⚙️ Supports CI (e.g. GitHub Actions, GitLab CI)
-- 🤝 Your team doesn't need to migrate but they might want to
+- 🤝 Your team doesn't need to migrate, but they might want to
 - 🐚 Temporarily use a tool (e.g. `mise shell aws-cli@2.9.9`)
 
 > https://github.com/jdx/mise
