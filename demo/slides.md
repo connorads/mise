@@ -59,7 +59,7 @@ Meet `mise` ⚡
 - ⚒️ Universal version manager for languages and dev tools
 - 🪄 Replaces individual tools like `tfenv`/`nvm`/`pyenv` etc.
 - 🗄️ Declare tools versions in projects (`.python-version`)¹
-- 📂 Switches versions in milliseconds when you `cd`
+- 📂 When you `cd` it switches versions in milliseconds
 - ⬇️ Automatically downloads missing tools
 - 🌍 Declare global tool versions (e.g. `mise use -g jq@latest`)
 - ⚙️ Supports CI (e.g. GitHub Actions, GitLab CI)
