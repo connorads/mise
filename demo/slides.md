@@ -101,6 +101,12 @@ Which languages and tools are supported? ⚒️
 
 > https://mise.jdx.dev/registry.html
 
+<!-- pause -->
+
+Backends: e.g. `pipx:uv` • `pipx:poetry` • `cargo:ripgrep` • `gem:jekyll` • `github:user/repo` • `npm:@anthropic-ai/claude-code` • `npm:@openai/codex`
+
+> https://mise.jdx.dev/dev-tools/backends/ 
+
 <!-- end_slide -->
 
 Declare versions in project files 📂
