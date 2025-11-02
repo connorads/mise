@@ -253,7 +253,7 @@ Yes, `uv` let's you manage multiple versions of `python`, but `mise` is universa
 
 You can still use `uv`. In fact, you can install it with `mise`. And `mise` also supports using `uv`'s virtual environments.
 
-> https://mise.jdx.dev/mise-cookbook/python.html
+> https://mise.jdx.dev/mise-cookbook/python.html#mise-uv
 
 <!-- end_slide -->
 
