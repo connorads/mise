@@ -90,12 +90,9 @@ Which languages and tools are supported? ⚒️
 | `java`                    | `aws-cli`                 | `ripgrep`               |
 | `rust`                    | `gcloud`                  | `fd`                    |
 | `ruby`                    | `azure`                   | `fzf`                   |
-| `swift`                   | `kubectl`                 | `delta`                 |
 | `php`                     | `helm`                    | `age`                   |
 | `dotnet`                  | `docker-compose`          | `github-cli`            |
-| `kotlin`                  | `tflint`                  | `lazygit`               |
 | `scala`                   | `ansible`                 | `neovim`                |
-| `dart`                    | `vault`                   | `starship`              |
 | `elixir`                  | `consul`                  | `trivy`                 |
 | `haskell`                 | `nomad`                   | `btop`                  |
 
