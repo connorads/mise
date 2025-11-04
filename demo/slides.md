@@ -263,7 +263,10 @@ Frequently asked questions 💡
 # But what about `homebrew` or `apt` etc.?
 
 You can carry on using `brew` to install things, expecially GUI apps with `casks`.
+
 `mise` is useful for sharing tools on projects and keeping your environment clean/isolated.
+
+It's also useful when people haven't published to your system package manager e.g. `npm:@anthropic-ai/claude-code`
 
 <!-- pause -->
 
